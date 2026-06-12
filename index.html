@@ -6,28 +6,46 @@
     <title>Fidelidade Soberana</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; background: #0a1f1a; color: white; padding: 20px; text-align: center; }
-        .card { background: #166534; padding: 25px; border-radius: 16px; margin: 15px 0; }
-        h1 { color: #90ee90; }
+        body { font-family: -apple-system, sans-serif; background: #f8fafc; color: #0f172a; min-height: 100vh; padding-bottom: 70px; }
+        .header { background: #0d3b2e; color: white; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; }
+        .logo { width: 42px; height: 42px; background: #166534; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; }
+        .balance-card { background: white; border-radius: 20px; padding: 24px; margin: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .points { font-size: 48px; font-weight: bold; color: #0f172a; }
+        .card { background: #166534; color: white; padding: 20px; border-radius: 16px; margin: 16px; }
+        .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; background: white; border-top: 1px solid #ddd; display: flex; justify-content: space-around; padding: 10px 0; }
     </style>
 </head>
 <body>
-    <h1>∞ Fidelidade Soberana</h1>
-    <p>Pedro • Cliente desde 2024</p>
-
-    <div class="card">
-        <h2>Saldo atual</h2>
-        <h1>1.500 pontos</h1>
+    <div class="header">
+        <div class="logo">∞</div>
+        <div>
+            <strong>Soberana</strong><br>
+            <small>Pedro • Cliente desde 2024</small>
+        </div>
     </div>
 
-    <div class="card">
+    <div class="balance-card">
+        <div>Seu saldo atual</div>
+        <div class="points">1.426</div>
+        <div>prontos para resgate</div>
+    </div>
+
+    <div style="padding:0 16px; font-size:15px; color:#334155;">
+        Seus pontos viram desconto no seu restaurante preferido.
+    </div>
+
+    <div class="card" onclick="alert('Desconto ativado!')">
         🏷️ Resgatar descontos no restaurante
     </div>
 
-    <div class="card">
+    <div class="card" style="background:white; color:#0d3b2e; border:1px solid #ddd;" onclick="alert('Resgate Lightning em breve')">
         ₿ Resgatar em Bitcoin Lightning
     </div>
 
-    <p style="color:#90ee90; margin-top:30px;">Layout Verde funcionando</p>
+    <div class="bottom-nav">
+        <div>🏠 Início</div>
+        <div>🕒 Histórico</div>
+        <div>👤 Perfil</div>
+    </div>
 </body>
 </html>
